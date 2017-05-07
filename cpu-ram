@@ -1,0 +1,11 @@
+1.查看cpu型号：
+
+	cat /proc/cpuinfo |grep 'model name'
+
+2.查看服务器版本：
+
+	dmidecode|grep "System Information" -A9|egrep  "Manufacturer|Product|Serial"
+
+3.查看内存槽位及使用情况：
+
+	dmidecode | grep  -P  -A5  "Memory\s+Device" | grep Size | grep -v Range 
