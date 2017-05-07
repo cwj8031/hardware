@@ -1,0 +1,25 @@
+1.yum install unzip -y
+
+2.unzip ibm_utl_sraidmr_megacli-8.00.48_linux_32-64.zip
+
+3.cd  linux
+
+4.rpm -ivh Lib_Utils-1.00-09.noarch.rpm  MegaCli-8.00.48-1.i386.rpm
+
+5.know raid level
+
+	/opt/MegaRAID/MegaCli/MegaCli64 -LDInfo -Lall -aALL
+
+	RAID Level: Primary-1, Secondary-0, RAID Level Qualifier-0″) echo “Raid Level        :Raid 1
+	RAID Level: Primary-0, Secondary-0, RAID Level Qualifier-0″) echo “Raid Level        :Raid 0
+	RAID Level: Primary-5, Secondary-0, RAID Level Qualifier-3″) echo “Raid Level        :Raid 5
+	RAID Level: Primary-1, Secondary-3, RAID Level Qualifier-0″) echo “Raid Level        :Raid 10
+
+
+6.know something about disk
+
+	/opt/MegaRAID/MegaCli/MegaCli64 -PDList -aALL
+
+	厂商：/opt/MegaRAID/MegaCli/MegaCli64 -PDList -aALL |grep 'Inquiry Data:'
+
+	
