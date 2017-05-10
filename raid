@@ -1,0 +1,33 @@
+1.       启动系统,在显示F2、F11、F12界面按F2
+
+2.       进入Advanced选项
+
+3.       选择IDE Configuration,回车
+
+4.       选择Configure STAT#1 as [AHCI](有可能是IDE),是默认选中的行,回车(前提是已经安装了raid卡,如果没装,此处有可能没有RAID选项)
+
+5.       选中RAID,按F10保存退出重启
+
+6.       重启之后在显示F2、F11、F12界面按Ctrl+I 进入raid配置界面(前提是已经安装了raid卡)
+
+7.       选择Create RAID Volume
+
+8.       Name：SYSTEM(用做系统启动卷)
+
+9.       RAID Revel:RAID5(parity)
+
+10.   Strip Size:200GB(注意：此处不能太大,最大不能超过2T,否则后期安装操作系统,系统将无法正常启动)
+
+11.   选中Create Volume,回车,输入Y确定创建卷
+
+12.   按照步骤7-11把余下空间创建为data卷
+
+13.   插入系统安装光盘或者U盘,进行系统安装
+
+14.   在系统分区时,注意需要将系统启动分区设置到卷SYSTEM中(例如C盘和/boot),而DATA卷用于创建扩展盘(例如D盘和/data)
+
+15.   系统安装完毕后进入bios配置界面
+
+16.   选中Boot下的Boot Settings Configuration
+
+17.   如果有Quiet Boot选项,并且值为Enabled,则将值修改成Disabled
