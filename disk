@@ -22,4 +22,6 @@
 
 	厂商：/opt/MegaRAID/MegaCli/MegaCli64 -PDList -aALL |grep 'Inquiry Data:'
 
-	
+	/opt/MegaRAID/MegaCli/MegaCli64 -PDList -aALL |egrep '(Firmware state:|Inquiry Data:|Raw Size:|PD Type: )'
+
+	/opt/MegaRAID/MegaCli/MegaCli64 -PDList -aALL  |egrep  '(Inquiry Data:|Raw Size:|PD Type:|Firmware state:)'	
