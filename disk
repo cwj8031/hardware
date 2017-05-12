@@ -25,3 +25,8 @@
 	/opt/MegaRAID/MegaCli/MegaCli64 -PDList -aALL |egrep '(Firmware state:|Inquiry Data:|Raw Size:|PD Type: )'
 
 	/opt/MegaRAID/MegaCli/MegaCli64 -PDList -aALL  |egrep  '(Inquiry Data:|Raw Size:|PD Type:|Firmware state:)'	
+
+
+7.    		http://blog.chinaunix.net/uid-25135004-id-3139293.html    查看raid信息
+
+
